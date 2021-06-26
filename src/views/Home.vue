@@ -302,7 +302,7 @@
             </slide>
             <!-- fourth-slide ends -->
           </carousel>
-          <div class="flex justify-center mt-20 mb-20">
+          <div class="flex justify-center mt-20">
             <div
               role="button"
               class="
@@ -325,9 +325,32 @@
     <!-- testimonial-section-ends -->
 
     <!-- call-to-action-section-starts -->
-    <section class="call-to-action">
-      <div>
-        <div class="common"></div>
+    <section class="call-to-action mt-32">
+      <div class="bg-pry-brightRed py-14">
+        <div class="common grid grid-cols-1 lg:grid-cols-2">
+          <div>
+            <h3 class="text-white font-bold text-5xl text-center lg:text-left">
+              Simplify how your team works today.
+            </h3>
+          </div>
+          <div class="flex justify-end items-center">
+            <div
+              role="button"
+              class="
+                bg-white
+                text-pry-brightRed
+                rounded-full
+                px-9
+                py-4
+                font-bold
+                inline-block
+                shadow-3xl
+              "
+            >
+              Get Started
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- call-to-action-section-ends -->
