@@ -2,8 +2,20 @@
   <div class="main text-base lg:text-xl text-sec-grayishBlue">
     <Header />
     <router-view />
+    <Footer />
   </div>
 </template>
+
+<script>
+import Header from "./components/Header";
+import Footer from "./components/Footer.vue";
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
 
 <style>
 .main {
