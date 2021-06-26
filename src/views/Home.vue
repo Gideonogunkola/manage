@@ -302,10 +302,35 @@
             </slide>
             <!-- fourth-slide ends -->
           </carousel>
+          <div class="flex justify-center mt-20 mb-20">
+            <div
+              role="button"
+              class="
+                bg-pry-brightRed
+                text-white
+                rounded-full
+                px-9
+                py-4
+                font-bold
+                inline-block
+                shadow-3xl
+              "
+            >
+              Get Started
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- testimonial-section-ends -->
+
+    <!-- call-to-action-section-starts -->
+    <section class="call-to-action">
+      <div>
+        <div class="common"></div>
+      </div>
+    </section>
+    <!-- call-to-action-section-ends -->
   </div>
 </template>
 
