@@ -118,7 +118,9 @@
             <li class="pb-6 hover:text-pry-brightRed">
               <router-link to="/">Careers</router-link>
             </li>
-            <li><router-link to="/">Community</router-link></li>
+            <li class="hover:text-pry-brightRed">
+              <router-link to="/">Community</router-link>
+            </li>
           </ul>
         </div>
       </div>

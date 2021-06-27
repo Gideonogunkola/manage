@@ -41,7 +41,7 @@
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <div>
+            <div class="flex justify-center lg:justify-start">
               <button
                 role="button"
                 class="
@@ -99,7 +99,16 @@
             >
               What’s different about Manage?
             </h3>
-            <p class="leading-9 tracking-wider py-10 lg:w-4/5">
+            <p
+              class="
+                text-center
+                lg:text-left
+                leading-9
+                tracking-wider
+                py-10
+                lg:w-4/5
+              "
+            >
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams.
