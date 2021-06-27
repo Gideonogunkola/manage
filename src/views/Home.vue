@@ -14,7 +14,7 @@
             gap-20
           "
         >
-          <div class="">
+          <div class="order-2 lg:order-1">
             <h2
               class="
                 text-3xl
@@ -22,7 +22,8 @@
                 lg:text-6xl
                 xl:text-7xl
                 font-bold
-                text-sec-darkBlue
+                text-sec-darkBlue text-center
+                lg:text-left
               "
             >
               Bring everyone together to build better products.
@@ -45,7 +46,7 @@
               Get Started
             </button>
           </div>
-          <div class="">
+          <div class="order-1 lg:order-2">
             <img class="" src="@/assets/images/illustration-intro.svg" alt="" />
           </div>
         </div>
@@ -54,11 +55,34 @@
     <!-- Hero-section-ends -->
 
     <!-- feature-section-starts -->
-    <section class="features">
+    <section class="features mt-80 lg:mt-0">
       <div class="background">
-        <div class="common grid grid-cols-1 lg:grid-cols-2 items gap-20 my-32">
+        <div
+          class="
+            common
+            grid grid-cols-1
+            lg:grid-cols-2
+            items
+            gap-y-5
+            lg:gap-20
+            my-32
+          "
+        >
           <div>
-            <h3 class="text-sec-darkBlue font-bold text-5xl">
+            <h3
+              class="
+                text-sec-darkBlue
+                font-bold
+                text-3xl
+                md:text-4xl
+                lg:text-5xl
+                text-center
+                lg:text-left
+                w-4/5
+                lg:w-full
+                m-auto
+              "
+            >
               What’s different about Manage?
             </h3>
             <p class="leading-9 tracking-wider py-10 lg:w-4/5">
@@ -68,29 +92,39 @@
             </p>
           </div>
           <div>
-            <!-- feature-03 starts -->
-            <div class="flex">
-              <div>
+            <!-- feature-01 starts -->
+            <div class="">
+              <div
+                class="
+                  bg-pry-paleRed
+                  lg:bg-transparent
+                  rounded-l-full
+                  flex
+                  items-center
+                "
+              >
                 <div
                   class="
                     bg-pry-brightRed
                     text-white
                     rounded-full
-                    px-9
-                    py-4
+                    px-5
+                    lg:py-4
+                    py-2
+                    lg:px-9
                     font-bold
                     inline-block
                   "
                 >
                   01
                 </div>
+                <h4 class="pl-2 lg:pl-8 font-bold text-sec-darkBlue">
+                  Track company-wide progress
+                </h4>
               </div>
 
               <div>
-                <div class="pl-8">
-                  <h4 class="pt-4 font-bold text-sec-darkBlue">
-                    Track company-wide progress
-                  </h4>
+                <div class="lg:ml-32">
                   <p class="leading-9 tracking-wider pt-4">
                     See how your day-to-day tasks fit into the wider vision. Go
                     from tracking progress at the milestone level all the way
@@ -103,28 +137,38 @@
             <!-- feature-01 ends -->
 
             <!-- feature-02 starts -->
-            <div class="flex pt-14">
-              <div>
+            <div class="mt-10">
+              <div
+                class="
+                  bg-pry-paleRed
+                  lg:bg-transparent
+                  rounded-l-full
+                  flex
+                  items-center
+                "
+              >
                 <div
                   class="
                     bg-pry-brightRed
                     text-white
                     rounded-full
-                    px-9
-                    py-4
+                    lg:px-9
+                    px-5
+                    lg:py-4
+                    py-2
                     font-bold
                     inline-block
                   "
                 >
                   02
                 </div>
+                <h4 class="pl-2 lg:pl-8 font-bold text-sec-darkBlue">
+                  Advanced built-in reports
+                </h4>
               </div>
 
               <div>
-                <div class="pl-8">
-                  <h4 class="pt-4 font-bold text-sec-darkBlue">
-                    Advanced built-in reports
-                  </h4>
+                <div class="lg:ml-32">
                   <p class="leading-9 tracking-wider pt-4">
                     Set internal delivery estimates and track progress toward
                     company goals. Our customisable dashboard helps you build
@@ -136,28 +180,38 @@
             <!-- feature-02 ends -->
 
             <!-- feature-03 starts -->
-            <div class="flex pt-14">
-              <div>
+            <div class="mt-10">
+              <div
+                class="
+                  bg-pry-paleRed
+                  lg:bg-transparent
+                  rounded-l-full
+                  flex
+                  items-center
+                "
+              >
                 <div
                   class="
                     bg-pry-brightRed
                     text-white
                     rounded-full
-                    px-9
-                    py-4
+                    lg:px-9
+                    px-5
+                    lg:py-4
+                    py-2
                     font-bold
                     inline-block
                   "
                 >
                   03
                 </div>
+                <h4 class="pl-2 lg:pl-8 font-bold text-sec-darkBlue">
+                  Everything you need in one place
+                </h4>
               </div>
 
               <div>
-                <div class="pl-8">
-                  <h4 class="pt-4 font-bold text-sec-darkBlue">
-                    Everything you need in one place
-                  </h4>
+                <div class="lg:ml-32">
                   <p class="leading-9 tracking-wider pt-4">
                     Stop jumping from one service to another to communicate,
                     store files, track tasks and share documents. Manage offers
@@ -176,7 +230,20 @@
     <!-- testimonial-section-starts -->
     <section class="testimonial">
       <div class="">
-        <h3 class="text-sec-darkBlue font-bold text-5xl text-center">
+        <h3
+          class="
+            text-sec-darkBlue
+            font-bold
+            text-3xl
+            md:text-4xl
+            lg:text-5xl
+            text-center
+            lg:text-left
+            w-4/5
+            lg:w-full
+            m-auto
+          "
+        >
           What they've said?
         </h3>
         <div class="mt-20">
@@ -326,14 +393,25 @@
 
     <!-- call-to-action-section-starts -->
     <section class="call-to-action mt-32">
-      <div class="bg-pry-brightRed py-14">
+      <div class="bg-pry-brightRed py-20">
         <div class="common grid grid-cols-1 lg:grid-cols-2">
           <div>
-            <h3 class="text-white font-bold text-5xl text-center lg:text-left">
+            <h3
+              class="
+                text-white
+                font-bold
+                text-3xl
+                md:text-4xl
+                lg:text-5xl
+                text-center
+                lg:text-left
+                pb-10
+              "
+            >
               Simplify how your team works today.
             </h3>
           </div>
-          <div class="flex justify-end items-center">
+          <div class="flex justify-center lg:justify-end items-center">
             <div
               role="button"
               class="

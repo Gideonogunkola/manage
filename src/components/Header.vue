@@ -4,7 +4,7 @@
       class="
         max-w-screen-xl
         w-11/12
-        lg:h-28
+        h-28
         absolute
         items-center
         justify-between
@@ -20,7 +20,11 @@
           <img src="@/assets/images/logo.svg" alt="logo" />
         </router-link>
       </div>
-      <div class="w-2/5">
+      <div class="lg:hidden">
+        <img src="@/assets/images/icon-hamburger.svg" alt="" />
+      </div>
+
+      <div class="hidden lg:block w-2/5">
         <ul
           class="flex items-center justify-between font-bold text-sec-darkBlue"
         >
@@ -31,7 +35,7 @@
           <li><router-link to="/">Community</router-link></li>
         </ul>
       </div>
-      <div>
+      <div class="hidden lg:block">
         <div
           role="button"
           class="py-4 px-10 rounded-full text-white bg-pry-brightRed shadow-3xl"
