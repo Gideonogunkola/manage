@@ -93,6 +93,10 @@
               lg:ml-6
               bg-pry-brightRed
               text-white
+              border-sec-veryDarkBlue border-2
+              hover:border-pry-brightRed
+              duration-300
+              ease-linear
             "
             type="button"
             value="Go"

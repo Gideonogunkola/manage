@@ -29,17 +29,37 @@
         <ul
           class="flex items-center justify-between font-bold text-sec-darkBlue"
         >
-          <li><router-link to="/">Pricing</router-link></li>
-          <li><router-link to="/">Product</router-link></li>
-          <li><router-link to="/">About Us</router-link></li>
-          <li><router-link to="/">Careers</router-link></li>
-          <li><router-link to="/">Community</router-link></li>
+          <li class="hover:text-pry-brightRed">
+            <router-link to="/">Pricing</router-link>
+          </li>
+          <li class="hover:text-pry-brightRed">
+            <router-link to="/">Product</router-link>
+          </li>
+          <li class="hover:text-pry-brightRed">
+            <router-link to="/">About Us</router-link>
+          </li>
+          <li class="hover:text-pry-brightRed">
+            <router-link to="/">Careers</router-link>
+          </li>
+          <li class="hover:text-pry-brightRed">
+            <router-link to="/">Community</router-link>
+          </li>
         </ul>
       </div>
       <div class="hidden lg:block">
         <div
           role="button"
-          class="py-4 px-10 rounded-full text-white bg-pry-brightRed shadow-3xl"
+          class="
+            py-4
+            px-10
+            rounded-full
+            text-white
+            bg-pry-brightRed
+            shadow-3xl
+            hover:bg-sec-darkBlue
+            duration-300
+            ease-linear
+          "
         >
           Get Started
         </div>
@@ -86,10 +106,18 @@
               text-sec-darkBlue text-center
             "
           >
-            <li class="pb-6"><router-link to="/">Pricing</router-link></li>
-            <li class="pb-6"><router-link to="/">Product</router-link></li>
-            <li class="pb-6"><router-link to="/">About Us</router-link></li>
-            <li class="pb-6"><router-link to="/">Careers</router-link></li>
+            <li class="pb-6 hover:text-pry-brightRed">
+              <router-link to="/">Pricing</router-link>
+            </li>
+            <li class="pb-6 hover:text-pry-brightRed">
+              <router-link to="/">Product</router-link>
+            </li>
+            <li class="pb-6 hover:text-pry-brightRed">
+              <router-link to="/">About Us</router-link>
+            </li>
+            <li class="pb-6 hover:text-pry-brightRed">
+              <router-link to="/">Careers</router-link>
+            </li>
             <li><router-link to="/">Community</router-link></li>
           </ul>
         </div>

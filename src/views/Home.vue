@@ -28,23 +28,37 @@
             >
               Bring everyone together to build better products.
             </h2>
-            <p class="leading-9 tracking-wider py-10 lg:w-4/5">
+            <p
+              class="
+                text-center
+                lg:text-left
+                leading-9
+                tracking-wider
+                py-10
+                lg:w-4/5
+              "
+            >
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <button
-              role="button"
-              class="
-                py-4
-                px-10
-                rounded-full
-                text-white
-                bg-pry-brightRed
-                shadow-3xl
-              "
-            >
-              Get Started
-            </button>
+            <div>
+              <button
+                role="button"
+                class="
+                  py-4
+                  px-10
+                  rounded-full
+                  text-white
+                  bg-pry-brightRed
+                  hover:bg-sec-darkBlue
+                  duration-300
+                  ease-linear
+                  shadow-3xl
+                "
+              >
+                Get Started
+              </button>
+            </div>
           </div>
           <div class="order-1 lg:order-2">
             <img class="" src="@/assets/images/illustration-intro.svg" alt="" />
@@ -373,6 +387,9 @@
               role="button"
               class="
                 bg-pry-brightRed
+                hover:bg-sec-darkBlue
+                duration-300
+                ease-linear
                 text-white
                 rounded-full
                 px-9
@@ -416,6 +433,10 @@
               class="
                 bg-white
                 text-pry-brightRed
+                border-pry-brightRed border-2
+                hover:border-white
+                duration-300
+                ease-linear
                 rounded-full
                 px-9
                 py-4
