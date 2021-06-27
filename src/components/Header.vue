@@ -1,6 +1,7 @@
 <template>
   <div class="">
     <div
+      v-if="show"
       class="
         max-w-screen-xl
         w-11/12
@@ -20,7 +21,7 @@
           <img src="@/assets/images/logo.svg" alt="logo" />
         </router-link>
       </div>
-      <div class="lg:hidden">
+      <div class="lg:hidden" @click="open">
         <img src="@/assets/images/icon-hamburger.svg" alt="" />
       </div>
 
@@ -44,12 +45,79 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile-navigation -->
+    <div class="fixed">
+      <div
+        class="absolute bg-sec-veryDarkBlue bg-opacity-20 w-screen h-screen"
+        v-if="load"
+      >
+        <div
+          class="
+            max-w-screen-xl
+            w-11/12
+            h-28
+            m-auto
+            items-center
+            justify-between
+            flex
+            absolute
+            right-0
+            left-0
+          "
+        >
+          <div>
+            <router-link to="/">
+              <img src="@/assets/images/logo.svg" alt="logo" />
+            </router-link>
+          </div>
+          <div class="lg:hidden" @click="close">
+            <img src="@/assets/images/icon-close.svg" alt="" />
+          </div>
+        </div>
+        <div class="bg-white w-11/12 m-auto rounded shadow-lg">
+          <ul
+            class="
+              py-10
+              mt-32
+              items-center
+              justify-between
+              font-bold
+              text-sec-darkBlue text-center
+            "
+          >
+            <li class="pb-6"><router-link to="/">Pricing</router-link></li>
+            <li class="pb-6"><router-link to="/">Product</router-link></li>
+            <li class="pb-6"><router-link to="/">About Us</router-link></li>
+            <li class="pb-6"><router-link to="/">Careers</router-link></li>
+            <li><router-link to="/">Community</router-link></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-navigation -->
   </div>
 </template>
 
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      load: false,
+      show: true,
+    };
+  },
+  methods: {
+    open() {
+      this.load = true;
+      this.show = false;
+    },
+    close() {
+      this.load = false;
+      this.show = true;
+    },
+  },
 };
 </script>
 

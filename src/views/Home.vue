@@ -238,7 +238,6 @@
             md:text-4xl
             lg:text-5xl
             text-center
-            lg:text-left
             w-4/5
             lg:w-full
             m-auto
